@@ -59,7 +59,10 @@ html, body {
 .btn{
     transition: transform 0.3s ease;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: rgb(7, 8, 8);
+    color: #f9f9f9;
 }
 
 .btn:hover{
@@ -169,6 +172,7 @@ html, body {
 .subtitle-hg{
     color: blue;
     text-shadow: 3px 3px 6px darkblue;
+    font-size: 2rem;
 }
 
 .subtitle{
@@ -183,9 +187,24 @@ html, body {
 .title{
     font-size: 2rem;
 }
+.subtitle-hg{
+    font-size: 1rem;
+}
 .subtitle{
     font-size: 2rem;
-}    
+}  
+.text-item{
+    top: 0;
+}
+.background img{
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+
+.container1{
+    height: 65vh;
+}
 }
 
 .slide {
@@ -300,7 +319,7 @@ html, body {
 .image{
     width: 100%;
     background-color: #f9f9f9;
-    padding: 20px 20px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -312,7 +331,7 @@ html, body {
     height: 120px;
 }
 .img1 h1{
-    
+    padding: 10px;
     text-decoration: underline solid black;
     text-align: center;
 }
@@ -349,6 +368,74 @@ html, body {
         height: 60px;
     }
     .img h1{
-        font-size: 10px;
+        font-size: 25px;
+        padding: 10px;
     }
+    .img1 p{
+        font-size: 15px;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.prodiv {
+  position: relative;
+  flex: 1 1 48%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.proimg {
+  position: relative;
+}
+
+.proimg img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.heading {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  
+  padding: 8px 14px;
+  font-weight: bold;
+  font-size: 18px;
+  z-index: 2;
+  transition: opacity 0.3s ease;
+  border-radius: 4px;
+}
+
+.protext {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.proimg:hover .protext {
+  opacity: 1;
+}
+
+.proimg:hover .heading {
+  opacity: 1;
+  top: 10px;
+  right: 10px;
 }
