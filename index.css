@@ -439,3 +439,57 @@ html, body {
   top: 10px;
   right: 10px;
 }
+
+
+
+  #contact {
+    width: 100%;
+    padding: 40px 20px;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-family: Arial, sans-serif;
+  }
+
+  #contact form {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #contact input,
+  #contact textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+  }
+
+  #contact textarea {
+    resize: none;
+  }
+
+  #contact button {
+    padding: 12px;
+    background: linear-gradient(to right, #004d4d, #008080);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  #contact button:hover {
+    background: linear-gradient(to right, #006666, #00cccc);
+  }
